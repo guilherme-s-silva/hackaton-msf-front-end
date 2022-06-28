@@ -71,7 +71,7 @@ body {
     height: 250px;
     border-radius: 10px;
 
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-between;
 
