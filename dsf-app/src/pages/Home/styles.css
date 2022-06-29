@@ -3,3 +3,25 @@
     margin: 0;
     padding: 0;
 }
+
+.App {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-cards-brief {
+    margin-top: 84px;
+    display: flex;
+    justify-content: center;
+}
+
+.container-cards-brief div + div {
+    margin-left: 42px;
+}
+
+.container-cards-tweets {
+    margin-top: 84px;
+}
+.container-cards-tweets div + div {
+    /* margin-top: 44px; */
+}
