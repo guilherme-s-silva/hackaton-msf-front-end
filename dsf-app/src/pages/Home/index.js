@@ -3,6 +3,7 @@ import "./styles.css";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import CardTweet from "../../components/CardTweet";
+import InputSelect from "../../components/InputSelect";
 
 export function App() {
     return (
@@ -17,15 +18,32 @@ export function App() {
                 <CardBriefTweet title={1000.50941446} userTwitter={"@guilherme_silva"} />
             </div>
 
-            <div className="container-cards-tweets" >
-                <CardTweet />
+            <main>
+                <div>
+                    <h4>Filtros:</h4>
 
-                <CardTweet />
+                    <div className="container-inputs-select">
+                        <InputSelect tipo={"Relevância"} />
 
-                <CardTweet />
+                        <InputSelect tipo={"Localização"} />
 
-                <CardTweet />
-            </div>
+                        <InputSelect tipo={"Seguidores"} />
+                    </div>
+                </div>
+                <div className="main-content-tweets" >
+                    <div className="container-cards-tweets" >
+                        <CardTweet />
+
+                        <CardTweet />
+
+                        <CardTweet />
+
+                        <CardTweet />
+                    </div>
+
+                    <section></section>
+                </div>
+            </main>
 
             <Footer />
         </div>

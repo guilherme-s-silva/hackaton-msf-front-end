@@ -1,12 +1,7 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 .App {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .container-cards-brief {
@@ -15,13 +10,51 @@
     justify-content: center;
 }
 
-.container-cards-brief div + div {
+.container-cards-brief div+div {
     margin-left: 42px;
 }
 
-.container-cards-tweets {
-    margin-top: 84px;
+.App h4 {
+    margin-top: 72px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.1rem;
+    color: #808080;
 }
-.container-cards-tweets div + div {
-    /* margin-top: 44px; */
+
+.container-inputs-select {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container-inputs-select div+div {
+    margin-left: 42px;
+}
+
+.main-content-tweets {
+    margin-top: 84px;
+    margin-bottom: 220px;
+    height: 1120px;
+    display: flex;
+}
+
+/* .container-cards-tweets {
+    margin-top: 84px;
+} */
+
+/* .container-cards-tweets div+div {
+    margin-top: 44px;
+} */
+
+.main-content-tweets section {
+    margin-left: 36px;
+    width: 358px;
+    height: 100%;
+    background: #242424;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.14);
+    border-radius: 4px;
 }
