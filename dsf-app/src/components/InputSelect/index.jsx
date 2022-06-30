@@ -2,11 +2,11 @@
 
 import "./styles.css";
 
-export default function InputSelect({ dados, funcaoEstado, tipo }) {
+export default function InputSelect({ dados="", funcaoEstado="", tipo, ...rest }) {
     /* const [select, setSelect] = useState(""); */
 
     return (
-        <div className="content-select" >
+        <div className="content-select" {...rest} >
             <select className="custom-select" /* value={select} */ /* onChange={e => funcaoEstado(e)} */ >
                 <option value="" selected disabled>{tipo}</option>
                 {/* <option value="" selected disabled>desabilitado</option> */}

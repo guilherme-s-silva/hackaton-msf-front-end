@@ -4,6 +4,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: var(--black-alternative);
+    /* background-color: var(--gray-dark); */
     padding: 25px 5% 25px 10%;
 }
 
