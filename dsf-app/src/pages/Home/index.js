@@ -1,9 +1,9 @@
-import CardBriefTweet from "../../components/CardBriefTweet";
-import "./styles.css";
 import Header from "../../components/Header";
-import Footer from "../../components/Footer";
-import CardTweet from "../../components/CardTweet";
 import InputSelect from "../../components/InputSelect";
+import CardBriefTweet from "../../components/CardBriefTweet";
+import CardTweet from "../../components/CardTweet";
+import Footer from "../../components/Footer";
+import "./styles.css";
 
 export function App() {
     return (
