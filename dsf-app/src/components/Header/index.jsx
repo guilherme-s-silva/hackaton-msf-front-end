@@ -14,6 +14,8 @@ import UserPic from "../../assets/user-pic.svg";
 import Gear from "../../assets/gear-icon.svg";
 // @ts-ignore
 import Saved from "../../assets/saved-icon.svg";
+// @ts-ignore
+import Logo from '../../assets/msf-logo.svg';
 /* rotas.get("/busca/:termo", twitterQuery.buscaPorTermo) */
 export default function Header() {
     const [inputSearch, setInputSearch] = useState("");
@@ -48,7 +50,7 @@ export default function Header() {
 
     return (
         <header className="header-container">
-            <span>Logo</span>
+            <img src={Logo} alt='Logo MSF' className="header-logo" />
 
             <form className="input-header" onSubmit={e => handleSubmit(e)} >
                 <img src={Lens} alt="Lente de Aumento" />
