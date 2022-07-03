@@ -14,7 +14,7 @@ import UserPic from "../../assets/user-pic.svg";
 import Gear from "../../assets/gear-icon.svg";
 // @ts-ignore
 import Saved from "../../assets/saved-icon.svg";
-/* rotas.get("/busca/:termo", twitterQuery.buscaPorTermo) */
+
 export default function Header() {
     const [inputSearch, setInputSearch] = useState("");
     // @ts-ignore
@@ -26,10 +26,10 @@ export default function Header() {
         if(!inputSearch) {
             return;
         }
-        console.log(inputSearch);
+        
         try {
             const { data } = await instanceAxios.get(`/busca/${inputSearch}`);
-            console.log(data);
+            
             setDataTweets(data);
         } catch (error) {
             console.log(error.message);

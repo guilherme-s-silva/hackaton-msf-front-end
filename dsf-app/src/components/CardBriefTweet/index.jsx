@@ -7,29 +7,21 @@ import { capitalize, formatToLocaleNumber } from "../../utils/formats";
 
 import "./styles.css";
 
-/* import { dataTest as data } from "../../data/dataTest"; */
-
 export default function CardBriefTweet({ userTwitter }) {
     const [title, setTitle] = useState(0);
     // @ts-ignore
-    const { /* dataBriefCards, setDataBriefCards, */ setDataTweets } = useGlobal();
+    const { setDataTweets } = useGlobal();
 
     useEffect(() => {
         async function loadInfosBriefCard() {
             try {
                 const { data } = await instanceAxios.get(`/filtro/${userTwitter}`);
 
-                /* setDataBriefCards({
-                    ...dataBriefCards,
-                    [userTwitter]: data,
-                }); */
-
                 data.forEach(element => {
                     if (element.verified) {
                         setTitle(prev => prev + 1);
                     }
                 });
-                /* console.log({[userTwitter]: data}); */
             } catch (error) {
                 console.log(error.mensage);
             }
@@ -40,7 +32,6 @@ export default function CardBriefTweet({ userTwitter }) {
     }, []);
 
     async function handleInfosBriefCard() {
-        /* console.log({userTwitter: userTwitter}); */
         try {
             const { data } = await instanceAxios.get(`/filtro/${userTwitter}`);
 
@@ -48,7 +39,6 @@ export default function CardBriefTweet({ userTwitter }) {
         } catch (error) {
             console.log(error.message);
         }
-        /* console.log(dataBriefCards); */
     };
 
     return (

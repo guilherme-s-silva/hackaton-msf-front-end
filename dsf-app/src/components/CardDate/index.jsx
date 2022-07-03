@@ -1,21 +1,15 @@
-/* import { useState } from "react"; */
 import { format, subDays } from "date-fns";
 
 import { useGlobal } from "../../hooks/useGlobal";
+import { categories } from "../../data/categories";
 
 import InputSelect from "../InputSelect";
 
 import "./styles.css";
 
-import { categories } from "../../data/categories";
-
 export default function CardDate() {
-    /* const [dateForm, setDateForm] = useState({
-        starDate: "",
-        endDate: "",
-    }); */
     // @ts-ignore
-    const { dateForm, setDateForm /* dataTweets, setDataTweets */ } = useGlobal();
+    const { dateForm, setDateForm } = useGlobal();
 
     const dateNow = format(new Date(), "yyyy-MM-dd");
     const dateMin = format(subDays(new Date(), 6), "yyyy-MM-dd");
@@ -57,7 +51,6 @@ export default function CardDate() {
 
             <span>sobre</span>
 
-            {/* <InputSelect dados={categories} style={{ width: "280px" }} tipo={"escolher o assunto"} /> */}
             <InputSelect dados={categories} style={{ width: "280px" }} tipo={"assunto"} />
         </div>
     );
