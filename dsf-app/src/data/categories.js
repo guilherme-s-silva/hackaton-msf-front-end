@@ -1,0 +1,18 @@
+export const categories = [
+    "enchente",
+    "alagamento",
+    "rompimento de barragem",
+    "chuvas intensas",
+    "deslizamento",
+    "frio intenso",
+    "amplitude térmica",
+    "ventania",
+    "ciclone",
+    "incêndio",
+    "queimada",
+    "onda de calor",
+    "geada",
+    "onda de frio",
+    "tremor de terra",
+    "abalo sísmico",
+];

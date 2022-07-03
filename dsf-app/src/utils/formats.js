@@ -4,3 +4,11 @@ export function formatToLocaleNumber(quantidade) {
 
     return new Intl.NumberFormat("pt-BR", options).format(quantidadeNumber);
 };
+
+export function capitalize(str) {
+	if (typeof str !== 'string') {
+		return '';
+	}
+    
+	return str.charAt(0).toUpperCase() + str.substring(1);
+};
