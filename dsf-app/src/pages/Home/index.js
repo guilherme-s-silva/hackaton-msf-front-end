@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 import { instanceAxios } from "../../services/axios";
 import { useGlobal } from "../../hooks/useGlobal";
