@@ -8,6 +8,10 @@
     padding: 25px 5% 25px 10%;
 }
 
+.header-logo {
+    width: 150px;
+}
+
 .input-header {
     background-color: white;
     display: flex;
